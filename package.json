@@ -1,21 +1,24 @@
 {
   "name": "laboratory-classes-6",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "description": "Laboratory 6 - Express + Electron",
+  "main": "main.js", 
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "node server.js",            
+    "dev": "nodemon server.js",         
+    "electron": "electron .",
+    "serve-and-electron": "concurrently \"npm run start\" \"npm run electron\""
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^2.2.0",
     "ejs": "^3.1.10",
-    "express": "^5.1.0",
-    "laboratory-classes-6": "file:"
+    "express": "^5.1.0"
   },
   "devDependencies": {
-    "nodemon": "^3.1.9"
+    "electron": "^36.2.0",
+    "nodemon": "^3.1.9",
+    "concurrently": "^8.2.2"
   }
 }
-
